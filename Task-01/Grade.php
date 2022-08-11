@@ -1,64 +1,15 @@
 <?php 
 
 
-$Err_phy = $Err_chem = $Err_biolo = $Err_math = $Err_comp ="";
-// Start condtion check form impty or not ***
 
 if($_SERVER['REQUEST_METHOD']== "POST"){
-
-if(isset($Physics)|| isset($Chemistry)||isset($Biology)||isset($Mathematics)||isset($Computer) ){
   $Physics     =  $_POST['Physics'];
   $Chemistry   = $_POST['Chemistry'];
   $Biology     = $_POST['Biology'];
   $Mathematics = $_POST['Mathematics'];
   $Computer    = $_POST['Computer'];
-}
 
-//  if(empty($Physics)){
-//    $Err_phy = "<p style=color:red> *grades Physics is required </p>";
-
-//  }else{
-//    $Physics ;
-//  }
-
-//  if(empty($Chemistry)){
-//   $Err_chem = "<p style=color:red> *grades Chemistry is required </p>";
-
-//  }else{
-//   $Chemistry ;
-//  }
-
-//  if(empty($Biology)){
-//   $Err_biolo = "<p style=color:red> *grades Biology is required </p>";
-
-//  }else{
-//   $Biology ;
-//  }
-
-//  if(empty($Mathematics)){
-//   $Err_math = "<p style=color:red> *grades Mathematics is required </p>";
-
-//  }else{
-//   $Mathematics ;
-//  }
-
-//  if(empty($Computer)){
-//   $Err_comp = "<p style=color:red> *grades Computer is required </p>";
-
-//  }else{
-//   $Computer ;
-//  }
-
-// End condtion check form impty or not ***
-
-// Start calcluter Total_grade **  
-$Physics     =  $_POST['Physics'];
-$Chemistry   = $_POST['Chemistry'];
-$Biology     = $_POST['Biology'];
-$Mathematics = $_POST['Mathematics'];
-$Computer    = $_POST['Computer'];
-
-$Total_grade = (int)$Physics + (int)$Chemistry + (int)$Biology + (int)$Mathematics + (int)$Computer;
+$Total_grade = $Physics + $Chemistry + $Biology + $Mathematics + $Computer;
 $Final_grade = $Total_grade / 500 * 100 ."%";
 
 if($Final_grade >= 90){
@@ -81,14 +32,6 @@ else{
 
 }
 }
-
-
-// $x= 5;
-// $y=$x*2;
-// if($y>5){
-//   $g = "sdsdsdsd" . $y."sa";
-// }
-
 
 ?>
 

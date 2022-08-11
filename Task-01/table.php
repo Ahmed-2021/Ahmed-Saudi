@@ -1,7 +1,4 @@
 <?php 
-
-
-
 // dynamic table
 // dynamic rows //4 
 // dynamic columns // 4
@@ -9,7 +6,7 @@
 // check if gender of user == f ==> female // 1
 
 $users = [
-    (object)[  // $users->name ; $user->gender[0]-gender
+    (object)[  
         'id' => 1,
         'name' => 'ahmed', // $user->name;
         "gender" => (object)[ 'gender' => 'm' ],  
@@ -51,7 +48,7 @@ $users = [
             'home' => 'drawing'
         ],
         'phones'=>[],
-    ],  
+    ],   
 ];
 
 // print_r($users);
@@ -126,8 +123,7 @@ $users = [
 
         <table class="table table-bordered">
   <thead>
-    <tr>
-
+   <tr>
       <th scope="col">id</th>
       <th scope="col">Name</th>
       <th scope="col">Gender</th>
@@ -135,7 +131,6 @@ $users = [
       <th scope="col">Activities</th>
       <th scope="col">Phones</th>
     </tr>
-
   </thead>
   <tbody>
     <?php foreach($users As $key => $user){  ?>
