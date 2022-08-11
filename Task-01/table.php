@@ -17,7 +17,7 @@ $users = [
             "school" => 'drawing',
             'home' => 'painting'
         ],
-        'phones'=>[1231513513,012312312,89746543],
+        // 'phones'=>[1231513513,012312312,89746543],
     ],
     (object)[
         'id' => 2,
@@ -32,7 +32,7 @@ $users = [
             "school" => 'painting',
             'home' => 'drawing'
         ],
-        'phones'=>[1231513513,89746543],
+        // 'phones'=>[1231513513,89746543],
     ],
     (object)[
         'id' => 3,
@@ -47,8 +47,8 @@ $users = [
             "school" => 'painting',
             'home' => 'drawing'
         ],
-        'phones'=>[],
-    ],   
+        // 'phones'=>[],
+    ],
 ];
 
 // print_r($users);
@@ -124,12 +124,10 @@ $users = [
         <table class="table table-bordered">
   <thead>
    <tr>
-      <th scope="col">id</th>
-      <th scope="col">Name</th>
-      <th scope="col">Gender</th>
-      <th scope="col">Hobbies</th>
-      <th scope="col">Activities</th>
-      <th scope="col">Phones</th>
+    <?php foreach($users[0] as $Head=>$value){
+      ?>
+      <th scope="col"><?= $Head ?></th>
+      <?php } ?>
     </tr>
   </thead>
   <tbody>
@@ -140,7 +138,7 @@ $users = [
       <td><?php echo ($user->gender->gender == "m") ? "male" : "female" ; ?> </td>
       <td><?php echo implode ( "<br>",$user->hobbies) ?></td>  
       <td><?php echo implode ( " <br>",$user->activities);  ?></td>
-      <td><?php echo  implode ( "<br>",$user->phones)  ?></td> 
+      <!-- <td><?php echo  implode ( "<br>",$user->phones)  ?></td>  -->
     </tr>
     
 <?php }?>
