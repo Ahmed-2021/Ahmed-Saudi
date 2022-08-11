@@ -13,22 +13,22 @@ $Total_grade = $Physics + $Chemistry + $Biology + $Mathematics + $Computer;
 $Final_grade = $Total_grade / 500 * 100 ."%";
 
 if($Final_grade >= 90){
-  $grade = " Your Percent is: {$Final_grade}"." **** ". " Your Grade A";
+  $grade = " Your Percent is: {$Final_grade}"." ** ". " Your Grade A";
 }elseif($Final_grade >= 80 ){
-  $grade = " Your Percent is: {$Final_grade}"." **** ". " Your Grade B";
+  $grade = " Your Percent is: {$Final_grade}"." ** ". " Your Grade B";
 
 }elseif($Final_grade >= 70 ){
-  $grade = " Your Percent is: {$Final_grade}"." **** ". " Your Grade C";
+  $grade = " Your Percent is: {$Final_grade}"." ** ". " Your Grade C";
 
 }elseif($Final_grade >= 60 ){
-  $grade = " Your Percent is: {$Final_grade}"." **** ". " Your Grade D";
+  $grade = " Your Percent is: {$Final_grade}"." ** ". " Your Grade D";
 
 }elseif($Final_grade >= 50 ){
-  $grade = " Your Percent is: {$Final_grade}"." **** ". " Your Grade E";
+  $grade = " Your Percent is: {$Final_grade}"." ** ". " Your Grade E";
 
 }
 else{
-  $grade = " Your Percent is: {$Final_grade}"." **** ". " Your Grade F";
+  $grade = " Your Percent is: {$Final_grade}"." ** ". " Your Grade F";
 
 }
 }
