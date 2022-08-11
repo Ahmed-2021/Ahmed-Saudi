@@ -100,15 +100,10 @@ else{
     <div class="col-md-4">
     <form action="" method="post">
     <input name="Physics" max="100" type="number" class="form-control mb-3" placeholder="Physics" aria-label="Physics" aria-describedby="basic-addon1"> 
-    <?= $Err_phy ?>
     <input name="Chemistry"  max="100" type="number" class="form-control mb-3"  placeholder="Chemistry" aria-label="Chemistry" aria-describedby="basic-addon1">
-    <?= $Err_chem ?>
     <input name="Biology"  max="100" type="number" class="form-control mb-3"  placeholder="Biology" aria-label="Biology" aria-describedby="basic-addon1">
-    <?= $Err_biolo ?>
     <input name="Mathematics"  max="100" type="number" class="form-control mb-3"  placeholder="Mathematics" aria-label="Mathematics" aria-describedby="basic-addon1">
-    <?= $Err_math ?>
     <input name="Computer"   max="100" type="number" class="form-control mb-3"  placeholder="Computer" aria-label="Computer" aria-describedby="basic-addon1">
-    <?= $Err_comp ?>
 
     <button class="btn btn-success">Show</button>
     <?= $grade??"" ?>
