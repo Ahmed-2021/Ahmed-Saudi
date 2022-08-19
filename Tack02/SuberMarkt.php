@@ -1,5 +1,4 @@
 <?php
-session_start();
 
 if($_SERVER["REQUEST_METHOD"]=="POST"){
     $Error = [];
@@ -60,24 +59,9 @@ $Final[]= (int)$value * (int)$Quantity[$key];
 }
 
 
-$_SESSION ['Product_Name'] = $Product_Name;
-$_SESSION ['Product_Price'] = $Product_Price;
-$_SESSION ['Quantity'] = $Quantity;
 
 
 }
-
-
-
-
-
-
-$_SESSION ['Clint_Name'] = $Clint_Name;
-$_SESSION ['Location'] = $Location;
-$_SESSION ['Number_OF_Products'] = $Number_OF_Products;
-
-
-
 
 }
 
@@ -116,17 +100,18 @@ $_SESSION ['Number_OF_Products'] = $Number_OF_Products;
       <form method="post">
             <div class ="mb-3">
             <label class="" for="inputGroupFile04">Clint Name :</label>
-            <input name="Clint_Name" type="text" value="<?= $_SESSION ['Clint_Name'] ?? ""?>" class="form-control" id="inputGroupFile04" placeholder="Type Your Name" aria-label="Username" aria-describedby="basic-addon1">
+            <input name="Clint_Name" type="text" value="<?= $_POST['Clint_Name'] ?? ""?>" class="form-control" id="inputGroupFile04" placeholder="Type Your Name" aria-label="Username" aria-describedby="basic-addon1">
           <?= $Error['Clint_Name'] ?? ""?>
         </div>
+        <?= var_dump($_POST['Location']);
+ ?>
             <div class="mb-3">
             <label for="validationDefault04">Location :</label>
            <select name="Location" value="  " class="custom-select" id="validationDefault04" >
-               <option value="NULL">choose your location</option>
-                 <option value="cairo" >cairo</option>
-                 <option selected value="Giza"  >Giza</option>
-                <option value="October">October</option>
-
+               <option value="">choose your location</option>
+                 <option <?= (isset($_POST['Location']))?($_POST['Location'] =="cairo" ?"selected":"" ):"" ?>  value="cairo" >cairo</option>
+                 <option <?= (isset($_POST['Location']))?($_POST['Location'] =="Giza" ?"selected":"" ):"" ?> value="Giza"  >Giza</option>
+                <option <?= (isset($_POST['Location']))?($_POST['Location'] =="October" ?"selected":"" ):"" ?>  value="October">October</option>
 
          </select>
          <?= $Error['Location'] ?? ""?>
@@ -134,7 +119,7 @@ $_SESSION ['Number_OF_Products'] = $Number_OF_Products;
 
             <div class="mb-3">
             <label class="" for="inputGroupFile04">Number OF Products :</label>
-            <input  name="Number_OF_Products" value="<?= $_SESSION ['Number_OF_Products'] ??""?>" type="number" class="form-control  " id="inputGroupFile04" placeholder="Type Your Name" aria-label="Products" aria-describedby="basic-addon1">
+            <input  name="Number_OF_Products" value="<?= $_POST['Number_OF_Products'] ??""?>" type="number" class="form-control  " id="inputGroupFile04" placeholder="Type Your Name" aria-label="Products" aria-describedby="basic-addon1">
             <?= $Error['Number_OF_Products'] ?? ""?>
 
         </div>
@@ -163,15 +148,14 @@ $_SESSION ['Number_OF_Products'] = $Number_OF_Products;
 
 
       <td>
-       <input name="Product_Name[]"  type="text" class="form-control  " placeholder="Product" >
+       <input name="Product_Name[]" value="<?= (isset($_POST['Product_Name']))?  $_POST['Product_Name'][0] :"" ?>" type="text" class="form-control  " placeholder="Product" >
         </td>
-
         <td>
-       <input name= "Product_Price[]"    type="text" class="form-control  " placeholder="Price">
+       <input name= "Product_Price[]" value="<?= (isset($_POST['Product_Price']))?  $_POST['Product_Price'][0] :"" ?>"   type="text" class="form-control  " placeholder="Price">
         </td>
  
         <td>
-       <input name="Quantity[]"  type="text" class="form-control  " placeholder="Quantity">
+       <input name="Quantity[]" value="<?= (isset($_POST['Quantity']))?  $_POST['Quantity'][0] :"" ?>"  type="text" class="form-control  " placeholder="Quantity">
         </td>
       
         <td>
@@ -189,13 +173,13 @@ $_SESSION ['Number_OF_Products'] = $Number_OF_Products;
   <thead>
     <tr>
       <th scope="col">Clint Name</th>
-      <td scope="col"><?= $_SESSION ['Clint_Name'] ?></td>
+      <td scope="col"><?= $_POST ['Clint_Name'] ?></td>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>City</th>
-      <td><?= $_SESSION ['Location'] ?></td>
+      <td><?= $_POST ['Location'] ?></td>
     </tr>
     <tr>
       <th>Total products</th>
