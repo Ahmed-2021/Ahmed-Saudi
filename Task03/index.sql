@@ -28,7 +28,7 @@
   <script data-cfasync="false" type="text/javascript" src="js/vendor/jquery/jquery.debounce-1.0.6.js?v=5.2.0"></script>
   <script data-cfasync="false" type="text/javascript" src="js/dist/menu_resizer.js?v=5.2.0"></script>
   <script data-cfasync="false" type="text/javascript" src="js/dist/cross_framing_protection.js?v=5.2.0"></script>
-  <script data-cfasync="false" type="text/javascript" src="js/messages.php?l=en&v=5.2.0"></script>
+  <script data-cfasync="false" type="text/javascript" src="js/messages.php?l=en&v=5.2.0&lang=en"></script>
   <script data-cfasync="false" type="text/javascript" src="js/dist/config.js?v=5.2.0"></script>
   <script data-cfasync="false" type="text/javascript" src="js/dist/doclinks.js?v=5.2.0"></script>
   <script data-cfasync="false" type="text/javascript" src="js/dist/functions.js?v=5.2.0"></script>
@@ -52,7 +52,7 @@
 
 <script data-cfasync="false" type="text/javascript">
 // <![CDATA[
-CommonParams.setAll({common_query:"",opendb_url:"index.php?route=/database/structure",lang:"en",server:"1",table:"",db:"",token:"344860285f7e2d326b723a754b2a603b",text_dir:"ltr",LimitChars:"50",pftext:"",confirm:true,LoginCookieValidity:"1440",session_gc_maxlifetime:"1440",logged_in:true,is_https:false,rootPath:"/phpmyadmin/",arg_separator:"&",version:"5.2.0",auth_type:"config",user:"root"});
+CommonParams.setAll({common_query:"lang=en",opendb_url:"index.php?route=/database/structure&lang=en",lang:"en",server:"1",table:"",db:"",token:"562d3d3e75716c662a75425c30756135",text_dir:"ltr",LimitChars:"50",pftext:"",confirm:true,LoginCookieValidity:"1440",session_gc_maxlifetime:"1440",logged_in:true,is_https:false,rootPath:"/phpmyadmin/",arg_separator:"&",version:"5.2.0",auth_type:"config",user:"root"});
 var firstDayOfCalendar = '0';
 var themeImagePath = '.\/themes\/pmahomme\/img\/';
 var mysqlDocTemplate = '.\/url.php\u003Furl\u003Dhttps\u00253A\u00252F\u00252Fdev.mysql.com\u00252Fdoc\u00252Frefman\u00252F8.0\u00252Fen\u00252F\u002525s.html';
@@ -223,22 +223,22 @@ $(function() {
   <noscript><style>html{display:block}</style></noscript>
 </head>
 <body>
-    <div id="pma_navigation" class="d-print-none" data-config-navigation-width="240">
+    <div id="pma_navigation" class="d-print-none" data-config-navigation-width="236">
     <div id="pma_navigation_resizer"></div>
     <div id="pma_navigation_collapser"></div>
     <div id="pma_navigation_content">
       <div id="pma_navigation_header">
 
                   <div id="pmalogo">
-                          <a href="index.php">
+                          <a href="index.php?lang=en">
                                       <img id="imgpmalogo" src="./themes/pmahomme/img/logo_left.png" alt="phpMyAdmin">
                                       </a>
                       </div>
         
         <div id="navipanellinks">
-          <a href="index.php?route=/" title="Home"><img src="themes/dot.gif" title="Home" alt="Home" class="icon ic_b_home"></a>
+          <a href="index.php?route=/&lang=en" title="Home"><img src="themes/dot.gif" title="Home" alt="Home" class="icon ic_b_home"></a>
 
-                      <a class="logout disableAjax" href="index.php?route=/logout" title="Empty session data"><img src="themes/dot.gif" title="Empty session data" alt="Empty session data" class="icon ic_s_loggoff"></a>
+                      <a class="logout disableAjax" href="index.php?route=/logout&lang=en" title="Empty session data"><img src="themes/dot.gif" title="Empty session data" alt="Empty session data" class="icon ic_s_loggoff"></a>
           
           <a href="./doc/html/index.html" title="phpMyAdmin documentation" target="_blank" rel="noopener noreferrer"><img src="themes/dot.gif" title="phpMyAdmin documentation" alt="phpMyAdmin documentation" class="icon ic_b_docs"></a>
 
@@ -256,53 +256,53 @@ $(function() {
 
   <div class="pma_quick_warp">
     <div class="drop_list"><button title="Recent tables" class="drop_button btn">Recent</button><ul id="pma_recent_list"><li class="warp_link">
-  <a href="index.php?route=/table/recent-favorite&db=ecommerce&table=addresses">
-    `ecommerce`.`addresses`
+  <a href="index.php?route=/table/recent-favorite&db=ecommerce&table=users&lang=en">
+    `ecommerce`.`users`
   </a>
 </li>
 <li class="warp_link">
-  <a href="index.php?route=/table/recent-favorite&db=ecommerce&table=orders">
-    `ecommerce`.`orders`
-  </a>
-</li>
-<li class="warp_link">
-  <a href="index.php?route=/table/recent-favorite&db=ecommerce&table=cities">
-    `ecommerce`.`cities`
-  </a>
-</li>
-<li class="warp_link">
-  <a href="index.php?route=/table/recent-favorite&db=ecommerce&table=regions">
-    `ecommerce`.`regions`
-  </a>
-</li>
-<li class="warp_link">
-  <a href="index.php?route=/table/recent-favorite&db=ecommerce&table=offers">
-    `ecommerce`.`offers`
-  </a>
-</li>
-<li class="warp_link">
-  <a href="index.php?route=/table/recent-favorite&db=ecommerce&table=coupon">
-    `ecommerce`.`coupon`
-  </a>
-</li>
-<li class="warp_link">
-  <a href="index.php?route=/table/recent-favorite&db=ecommerce&table=sub_gategorie">
+  <a href="index.php?route=/table/recent-favorite&db=ecommerce&table=sub_gategorie&lang=en">
     `ecommerce`.`sub_gategorie`
   </a>
 </li>
 <li class="warp_link">
-  <a href="index.php?route=/table/recent-favorite&db=ecommerce&table=admins">
-    `ecommerce`.`admins`
+  <a href="index.php?route=/table/recent-favorite&db=ecommerce&table=regions&lang=en">
+    `ecommerce`.`regions`
   </a>
 </li>
 <li class="warp_link">
-  <a href="index.php?route=/table/recent-favorite&db=ecommerce&table=brand">
-    `ecommerce`.`brand`
+  <a href="index.php?route=/table/recent-favorite&db=ecommerce&table=offers&lang=en">
+    `ecommerce`.`offers`
   </a>
 </li>
 <li class="warp_link">
-  <a href="index.php?route=/table/recent-favorite&db=ecommerce&table=products">
+  <a href="index.php?route=/table/recent-favorite&db=ecommerce&table=products&lang=en">
     `ecommerce`.`products`
+  </a>
+</li>
+<li class="warp_link">
+  <a href="index.php?route=/table/recent-favorite&db=ecommerce&table=orders&lang=en">
+    `ecommerce`.`orders`
+  </a>
+</li>
+<li class="warp_link">
+  <a href="index.php?route=/table/recent-favorite&db=ecommerce&table=gategories&lang=en">
+    `ecommerce`.`gategories`
+  </a>
+</li>
+<li class="warp_link">
+  <a href="index.php?route=/table/recent-favorite&db=ecommerce&table=coupon&lang=en">
+    `ecommerce`.`coupon`
+  </a>
+</li>
+<li class="warp_link">
+  <a href="index.php?route=/table/recent-favorite&db=ecommerce&table=cities&lang=en">
+    `ecommerce`.`cities`
+  </a>
+</li>
+<li class="warp_link">
+  <a href="index.php?route=/table/recent-favorite&db=ecommerce&table=brand&lang=en">
+    `ecommerce`.`brand`
   </a>
 </li>
 </ul></div>    <div class="drop_list"><button title="Favorite tables" class="drop_button btn">Favorites</button><ul id="pma_favorite_list"><li class="warp_link">
@@ -336,10 +336,10 @@ $(function() {
           </div>
     
           <div class="block second">
-                  <a href="index.php?route=/server/databases"><img src="themes/dot.gif" title="New" alt="New" class="icon ic_b_newdb"></a>
+                  <a href="index.php?route=/server/databases&lang=en"><img src="themes/dot.gif" title="New" alt="New" class="icon ic_b_newdb"></a>
               </div>
 
-              <a class="hover_show_full" href="index.php?route=/server/databases" title="New">New</a>
+              <a class="hover_show_full" href="index.php?route=/server/databases&lang=en" title="New">New</a>
           
     
 
@@ -360,10 +360,10 @@ $(function() {
           </div>
     
           <div class="block second">
-                  <a href="index.php?route=/database/operations&db=ecommerce"><img src="themes/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db"></a>
+                  <a href="index.php?route=/database/operations&db=ecommerce&lang=en"><img src="themes/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db"></a>
               </div>
 
-              <a class="hover_show_full" href="index.php?route=/database/structure&db=ecommerce" title="Structure">ecommerce</a>
+              <a class="hover_show_full" href="index.php?route=/database/structure&db=ecommerce&lang=en" title="Structure">ecommerce</a>
           
     
 
@@ -384,10 +384,10 @@ $(function() {
           </div>
     
           <div class="block second">
-                  <a href="index.php?route=/database/operations&db=information_schema"><img src="themes/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db"></a>
+                  <a href="index.php?route=/database/operations&db=information_schema&lang=en"><img src="themes/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db"></a>
               </div>
 
-              <a class="hover_show_full" href="index.php?route=/database/structure&db=information_schema" title="Structure">information_schema</a>
+              <a class="hover_show_full" href="index.php?route=/database/structure&db=information_schema&lang=en" title="Structure">information_schema</a>
           
     
 
@@ -408,10 +408,10 @@ $(function() {
           </div>
     
           <div class="block second">
-                  <a href="index.php?route=/database/operations&db=mysql"><img src="themes/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db"></a>
+                  <a href="index.php?route=/database/operations&db=mysql&lang=en"><img src="themes/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db"></a>
               </div>
 
-              <a class="hover_show_full" href="index.php?route=/database/structure&db=mysql" title="Structure">mysql</a>
+              <a class="hover_show_full" href="index.php?route=/database/structure&db=mysql&lang=en" title="Structure">mysql</a>
           
     
 
@@ -432,10 +432,10 @@ $(function() {
           </div>
     
           <div class="block second">
-                  <a href="index.php?route=/database/operations&db=performance_schema"><img src="themes/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db"></a>
+                  <a href="index.php?route=/database/operations&db=performance_schema&lang=en"><img src="themes/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db"></a>
               </div>
 
-              <a class="hover_show_full" href="index.php?route=/database/structure&db=performance_schema" title="Structure">performance_schema</a>
+              <a class="hover_show_full" href="index.php?route=/database/structure&db=performance_schema&lang=en" title="Structure">performance_schema</a>
           
     
 
@@ -456,10 +456,10 @@ $(function() {
           </div>
     
           <div class="block second">
-                  <a href="index.php?route=/database/operations&db=phpmyadmin"><img src="themes/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db"></a>
+                  <a href="index.php?route=/database/operations&db=phpmyadmin&lang=en"><img src="themes/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db"></a>
               </div>
 
-              <a class="hover_show_full" href="index.php?route=/database/structure&db=phpmyadmin" title="Structure">phpmyadmin</a>
+              <a class="hover_show_full" href="index.php?route=/database/structure&db=phpmyadmin&lang=en" title="Structure">phpmyadmin</a>
           
     
 
@@ -480,10 +480,10 @@ $(function() {
           </div>
     
           <div class="block second">
-                  <a href="index.php?route=/database/operations&db=test"><img src="themes/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db"></a>
+                  <a href="index.php?route=/database/operations&db=test&lang=en"><img src="themes/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db"></a>
               </div>
 
-              <a class="hover_show_full" href="index.php?route=/database/structure&db=test" title="Structure">test</a>
+              <a class="hover_show_full" href="index.php?route=/database/structure&db=test&lang=en" title="Structure">test</a>
           
     
 
@@ -501,10 +501,10 @@ $(function() {
       </div>
 
       <div id="pma_navi_settings_container">
-                  <div id="pma_navigation_settings"><div class="page_settings"><form method="post" action="index.php&#x3F;route&#x3D;&#x25;2Fexport&amp;server&#x3D;1" class="config-form disableAjax">
+                  <div id="pma_navigation_settings"><div class="page_settings"><form method="post" action="index.php&#x3F;route&#x3D;&#x25;2Fexport&amp;server&#x3D;1&amp;lang&#x3D;en" class="config-form disableAjax">
   <input type="hidden" name="tab_hash" value="">
       <input type="hidden" name="check_page_refresh" id="check_page_refresh" value="">
-    <input type="hidden" name="token" value="344860285f7e2d326b723a754b2a603b">
+    <input type="hidden" name="lang" value="en"><input type="hidden" name="token" value="562d3d3e75716c662a75425c30756135">
   <input type="hidden" name="submit_save" value="Navi">
 
   <ul class="nav nav-tabs" id="configFormDisplayTab" role="tablist">
@@ -780,7 +780,7 @@ $(function() {
       </th>
 
   <td>
-          <input type="number" name="NavigationWidth" id="NavigationWidth" value="240" class="">
+          <input type="number" name="NavigationWidth" id="NavigationWidth" value="236" class="custom">
     
     
     
@@ -1377,7 +1377,7 @@ registerFieldValidator('NavigationTreeTableLevel', 'validatePositiveNumber', tru
   <ol class="breadcrumb breadcrumb-navbar">
     <li class="breadcrumb-item">
       <img src="themes/dot.gif" title="" alt="" class="icon ic_s_host">
-      <a href="index.php?route=/" data-raw-text="127.0.0.1" draggable="false">
+      <a href="index.php?route=/&lang=en" data-raw-text="127.0.0.1" draggable="false">
         Server:        127.0.0.1
       </a>
     </li>
@@ -1392,62 +1392,62 @@ registerFieldValidator('NavigationTreeTableLevel', 'validatePositiveNumber', tru
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul id="topmenu" class="navbar-nav">
                   <li class="nav-item">
-            <a class="nav-link text-nowrap" href="index.php?route=/server/databases">
+            <a class="nav-link text-nowrap" href="index.php?route=/server/databases&lang=en">
               <img src="themes/dot.gif" title="Databases" alt="Databases" class="icon ic_s_db">&nbsp;Databases
                           </a>
           </li>
                   <li class="nav-item">
-            <a class="nav-link text-nowrap" href="index.php?route=/server/sql">
+            <a class="nav-link text-nowrap" href="index.php?route=/server/sql&lang=en">
               <img src="themes/dot.gif" title="SQL" alt="SQL" class="icon ic_b_sql">&nbsp;SQL
                           </a>
           </li>
                   <li class="nav-item">
-            <a class="nav-link text-nowrap" href="index.php?route=/server/status">
+            <a class="nav-link text-nowrap" href="index.php?route=/server/status&lang=en">
               <img src="themes/dot.gif" title="Status" alt="Status" class="icon ic_s_status">&nbsp;Status
                           </a>
           </li>
                   <li class="nav-item">
-            <a class="nav-link text-nowrap" href="index.php?route=/server/privileges&viewing_mode=server">
+            <a class="nav-link text-nowrap" href="index.php?route=/server/privileges&viewing_mode=server&lang=en">
               <img src="themes/dot.gif" title="User accounts" alt="User accounts" class="icon ic_s_rights">&nbsp;User accounts
                           </a>
           </li>
                   <li class="nav-item">
-            <a class="nav-link text-nowrap" href="index.php?route=/server/export">
+            <a class="nav-link text-nowrap" href="index.php?route=/server/export&lang=en">
               <img src="themes/dot.gif" title="Export" alt="Export" class="icon ic_b_export">&nbsp;Export
                           </a>
           </li>
                   <li class="nav-item">
-            <a class="nav-link text-nowrap" href="index.php?route=/server/import">
+            <a class="nav-link text-nowrap" href="index.php?route=/server/import&lang=en">
               <img src="themes/dot.gif" title="Import" alt="Import" class="icon ic_b_import">&nbsp;Import
                           </a>
           </li>
                   <li class="nav-item">
-            <a class="nav-link text-nowrap" href="index.php?route=/preferences/manage">
+            <a class="nav-link text-nowrap" href="index.php?route=/preferences/manage&lang=en">
               <img src="themes/dot.gif" title="Settings" alt="Settings" class="icon ic_b_tblops">&nbsp;Settings
                           </a>
           </li>
                   <li class="nav-item">
-            <a class="nav-link text-nowrap" href="index.php?route=/server/replication">
+            <a class="nav-link text-nowrap" href="index.php?route=/server/replication&lang=en">
               <img src="themes/dot.gif" title="Replication" alt="Replication" class="icon ic_s_replication">&nbsp;Replication
                           </a>
           </li>
                   <li class="nav-item">
-            <a class="nav-link text-nowrap" href="index.php?route=/server/variables">
+            <a class="nav-link text-nowrap" href="index.php?route=/server/variables&lang=en">
               <img src="themes/dot.gif" title="Variables" alt="Variables" class="icon ic_s_vars">&nbsp;Variables
                           </a>
           </li>
                   <li class="nav-item">
-            <a class="nav-link text-nowrap" href="index.php?route=/server/collations">
+            <a class="nav-link text-nowrap" href="index.php?route=/server/collations&lang=en">
               <img src="themes/dot.gif" title="Charsets" alt="Charsets" class="icon ic_s_asci">&nbsp;Charsets
                           </a>
           </li>
                   <li class="nav-item">
-            <a class="nav-link text-nowrap" href="index.php?route=/server/engines">
+            <a class="nav-link text-nowrap" href="index.php?route=/server/engines&lang=en">
               <img src="themes/dot.gif" title="Engines" alt="Engines" class="icon ic_b_engine">&nbsp;Engines
                           </a>
           </li>
                   <li class="nav-item">
-            <a class="nav-link text-nowrap" href="index.php?route=/server/plugins">
+            <a class="nav-link text-nowrap" href="index.php?route=/server/plugins&lang=en">
               <img src="themes/dot.gif" title="Plugins" alt="Plugins" class="icon ic_b_plugin">&nbsp;Plugins
                           </a>
           </li>
@@ -1786,7 +1786,7 @@ registerFieldValidator('NavigationTreeTableLevel', 'validatePositiveNumber', tru
 </html>
   </div>
       <div id="selflink" class="d-print-none">
-      <a href="index.php?route=%2Fexport&amp;server=1" title="Open new phpMyAdmin window" target="_blank" rel="noopener noreferrer">
+      <a href="index.php?route=%2Fexport&amp;server=1&amp;lang=en" title="Open new phpMyAdmin window" target="_blank" rel="noopener noreferrer">
                   <img src="themes/dot.gif" title="Open new phpMyAdmin window" alt="Open new phpMyAdmin window" class="icon ic_window-new">
               </a>
     </div>
