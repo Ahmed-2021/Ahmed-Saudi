@@ -109,7 +109,7 @@ $_SESSION ['Loan_years'] = $Loan_years;
          <?php
         if(empty($Error)){ // true
             
-         if(isset($creat_table)){ // tru
+         if(isset($creat_table)){ // true
          foreach($creat_table as $Head_Table){ ?>
 
       <th  scope="col"><?= $Head_Table  ?? ""?></th>

@@ -128,7 +128,6 @@ $users = [
       <th scope="col"><?= $proparty?></th>
     
       <?php }?>
-
     </tr>
   </thead>
   <tbody>

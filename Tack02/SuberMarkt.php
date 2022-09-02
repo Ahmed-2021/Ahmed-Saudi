@@ -103,8 +103,6 @@ $Final[]= (int)$value * (int)$Quantity[$key];
             <input name="Clint_Name" type="text" value="<?= $_POST['Clint_Name'] ?? ""?>" class="form-control" id="inputGroupFile04" placeholder="Type Your Name" aria-label="Username" aria-describedby="basic-addon1">
           <?= $Error['Clint_Name'] ?? ""?>
         </div>
-        <?= var_dump($_POST['Location']);
- ?>
             <div class="mb-3">
             <label for="validationDefault04">Location :</label>
            <select name="Location" value="  " class="custom-select" id="validationDefault04" >
